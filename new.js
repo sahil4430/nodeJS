@@ -20,12 +20,12 @@
 //         document.write("*")
 //     }document.write("<br>");
 // }
-// const MYdt  = function(){
-//     return Date();
-// };
-// module.exports.MYdt= MYdt;
+const MYdt  = function(){
+    return Date();
+};
+module.exports.MYdt= MYdt;
 
-const arr=[2.1,-3.7 , 4.7];
+// const arr=[2.1,-3.7 , 4.7];
 // const result= arr.map(Math.round);
 // document.write(result);
 
