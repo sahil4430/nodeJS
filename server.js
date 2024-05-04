@@ -20,8 +20,34 @@
 //    console.log("renamed")
 // })
 
-var fs= require('fs');
-fs.appendFile('new.html', function(err){
-   if (err) throw err;
-   console.log(" create new html file");
-});
+// var fs= require('fs');
+// fs.appendFile('new.html','helllo word ', function(err){
+//    if (err) throw err;
+//    console.log(" create new html file");
+// });
+  
+// var fs= require('fs');
+
+// fs.open('ne.html','r',function(err){
+//    if (err) throw err;
+//    console.log(" use to create new file")
+// })
+
+var url= require('url');
+var adr='https://chat.openai.com/c/e6a6ebcd-8045-4dff-b956-4bdaf4dc86ea'
+var q= url.parse(adr,true);
+console.log(q.host)
+console.log(q.pathname +" search= "+ q.search)
+
+
+// create new di
+let fs= require('fs');
+let DIR ="./image"
+fs.mkdir(DIR,(err=>{
+   if (err){
+      console.log("have one ")
+   }
+   else{
+      console.log("create a new folder")
+   }
+}))
