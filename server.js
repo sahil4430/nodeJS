@@ -50,8 +50,17 @@
 //    else{
 //       console.log("create a new folder")
 //    }
+// if ( err){
+// console.log("have one error ");}
+//else{
+//console.log("next error ")
+//}
+//
 // }))
 
+
+
+// this code is use to send mail to one device to other
 // var mailer = require('nodemailer');
 //  var send = mailer.createTransport({
 //    service :'gmail',
@@ -77,3 +86,9 @@
 //    }
 //  })
 
+
+var fs = require('fs');
+ fs.open('uploder.js','w',function(err){
+    if(err) throw err;
+    console.log('new file created')
+ })
