@@ -57,38 +57,36 @@
 //}
 //
 // }))
-
-
-
 // this code is use to send mail to one device to other
-// var mailer = require('nodemailer');
-//  var send = mailer.createTransport({
-//    service :'gmail',
-//    auth:{
-//       user:'sahilpanwar1212@gmail.com',
-//       pass:'Sahil1212@#'  
-//    }
-//  });
 
-//  var mailOptions = {
-//    from: 'sahilpanwar1212@gmail.com',
-//    to: 'preetip1245@gmail.com',
-//    subject: 'Test Email',
-//    text: 'This is a test email.'
-//  };
+var mailer = require('nodemailer');
+ var send = mailer.createTransport({
+   service :'gmail',
+   auth:{
+      user:'sahilpanwar1212@gmail.com',
+      pass:'Sahil1212@#'  
+   }
+ });
 
-//  send.sendMail( mailOptions, function(err, info){
-//    if(err){
-//       console.log("error")
-//    }
-//    else{
-//       console.log(info.response)
-//    }
-//  })
+ var mailOptions = {
+   from: 'sahilpanwar1212@gmail.com',
+   to: 'preetip1245@gmail.com',
+   subject: 'Test Email',
+   text: 'This is a test email.'
+ };
 
-
-var fs = require('fs');
- fs.open('uploder.js','w',function(err){
-    if(err) throw err;
-    console.log('new file created')
+ send.sendMail( mailOptions, function(err, info){
+   if(err){
+      console.log( 'error' )
+   }
+   else{
+      console.log(info.response)
+   }
  })
+
+
+// var fs = require('fs');
+//  fs.open('uploder.js','w',function(err){
+//     if(err) throw err;
+//     console.log('new file created')
+//  })
