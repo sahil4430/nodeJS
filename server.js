@@ -59,30 +59,30 @@
 // }))
 // this code is use to send mail to one device to other
 
-var mailer = require('nodemailer');
- var send = mailer.createTransport({
-   service :'gmail',
-   auth:{
-      user:'sahilpanwar1212@gmail.com',
-      pass:'Sahil1212@#'  
-   }
- });
+// var mailer = require('nodemailer');
+//  var send = mailer.createTransport({
+//    service :'gmail',
+//    auth:{
+//       user:'sahilpanwar1212@gmail.com',
+//       pass:'Sahil1212@#'  
+//    }
+//  });
 
- var mailOptions = {
-   from: 'sahilpanwar1212@gmail.com',
-   to: 'preetip1245@gmail.com',
-   subject: 'Test Email',
-   text: 'This is a test email.'
- };
+//  var mailOptions = {
+//    from: 'sahilpanwar1212@gmail.com',
+//    to: 'preetip1245@gmail.com',
+//    subject: 'Test Email',
+//    text: 'This is a test email.'
+//  };
 
- send.sendMail( mailOptions, function(err, info){
-   if(err){
-      console.log( 'error' )
-   }
-   else{
-      console.log(info.response)
-   }
- })
+//  send.sendMail( mailOptions, function(err, info){
+//    if(err){
+//       console.log( 'error' )
+//    }
+//    else{
+//       console.log(info.response)
+//    }
+//  })
 
 
 // var fs = require('fs');
