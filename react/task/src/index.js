@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './Component/Home';
 import Body from './Component/Body';
+import Slider from './Component/Slider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
