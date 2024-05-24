@@ -27,7 +27,7 @@ function Home() {
         <div className='search'>
           <input type='text' placeholder='  Search...' className='input'></input>
         </div>
-        <img src={bg2} alt='bg image' className='img1'/>
+        {/* <img src={bg2} alt='bg image' className='img1'/> */}
       </div>
       
     </>
