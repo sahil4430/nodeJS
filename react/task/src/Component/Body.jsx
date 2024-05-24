@@ -8,9 +8,8 @@ function Body() {
     <div>
         <img src={bg2} alt='bg image' className='img'/>
         <img src={logo} alt='logo' className='logo'style={{height:'50px' ,width:'300px'}}/>
-        <div className='Container'>
-          <Slider/>
-        </div>
+        <div className='Container'><Slider/>
+        </div> 
     </div>
   )
 }

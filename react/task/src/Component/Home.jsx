@@ -8,6 +8,7 @@ import money from'../Assests/money.png';
 import build from '../Assests/build.png';
 import buket from '../Assests/buket.png';
 import bg2 from '../Assests/2bg.png';
+import Body from './Body';
 function Home() {
   return (
     <>
