@@ -17,7 +17,7 @@ const Slider = () => {
   return (
     <div className="container">
       <div className="slide" ref={slideRef}>
-        <div className="item" style={{ backgroundImage: 'url(https://i.ibb.co/qCkd9jS/img1.jpg)' }}>
+        <div className="item" style={{ backgroundImage: 'url(https://i.ibb.co/qCkd9jS/img1.jpg)',  }}>
           <div className="content">
             <div className="name">Switzerland</div>
             <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>

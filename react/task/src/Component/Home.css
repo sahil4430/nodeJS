@@ -1,6 +1,5 @@
 .body {
     position: relative; /* Ensure the body is positioned relatively */
-    overflow: hidden; /* Combine overflow-x and overflow-y */
   }
   
   .img {
@@ -13,6 +12,9 @@
     object-fit: cover; 
     filter: brightness(60%);
   } 
+  .img1{
+    filter: blur(1 px );
+}
   .navbar {
     background-color: transparent;
     color: aliceblue;

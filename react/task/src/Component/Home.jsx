@@ -9,9 +9,13 @@ import build from '../Assests/build.png';
 import buket from '../Assests/buket.png';
 import bg2 from '../Assests/2bg.png';
 import Body from './Body';
+
 function Home() {
   return (
     <>
+    <div className='background'>
+      <img src={bg} alt='bg image' className='img'/>
+      </div>
       <div className='body'>
         <BrowserRouter><NavBar sticky="top" /></BrowserRouter>
         <div className='Bcontainer'>
@@ -23,10 +27,9 @@ function Home() {
         <div className='search'>
           <input type='text' placeholder='  Search...' className='input'></input>
         </div>
+        <img src={bg2} alt='bg image' className='img1'/>
       </div>
-      <div className='background'>
-      <img src={bg} alt='bg image' className='img'/>
-      </div>
+      
     </>
   );
 }
